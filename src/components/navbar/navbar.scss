@@ -2,11 +2,12 @@
   height: 100px;
 
   .wrapper {
-    max-width: 1280px;
+    max-width: 1366px;
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
   }
 
   span {
@@ -15,6 +16,9 @@
   }
 
   .social {
+    display: flex;
+    flex-direction: row;
+
     img {
       height: 55px;
       width: 55px;
