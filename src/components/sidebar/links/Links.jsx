@@ -2,8 +2,27 @@ import { motion } from "framer-motion";
 
 const Links = () => {
   const linkItems = ["Home", "Skills", "Projects", "Contact"];
+  const variants = {
+    open: {
+      transition: { staggerChildren: 0.1, delayChildren: 0.2 },
+    },
+    closed: {
+      transition: { staggerChildren: 0.1, staggerDirection: -1 },
+    },
+  };
+
+  const itemVariants = {
+    open: {
+      y: 0,
+      opacity: 1,
+    },
+    closed: {
+      y: 50,
+      opacity: 0,
+    },
+  };
   return (
-    <div className="links">
+    <motion.div className="links" variants={variants}>
       {linkItems.map((item, index) => {
         return (
           <motion.div
@@ -11,12 +30,13 @@ const Links = () => {
             className="list-items"
             whileHover={{ scale: 1.25 }}
             whileTap={{ scale: 1 }}
+            variants={itemVariants}
           >
             <a href={`#${item}`}>{item}</a>
           </motion.div>
         );
       })}
-    </div>
+    </motion.div>
   );
 };
 
