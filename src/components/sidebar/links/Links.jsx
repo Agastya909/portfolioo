@@ -10,6 +10,7 @@ const Links = () => {
             key={index}
             className="list-items"
             whileHover={{ scale: 1.25 }}
+            whileTap={{ scale: 1 }}
           >
             <a href={`#${item}`}>{item}</a>
           </motion.div>
