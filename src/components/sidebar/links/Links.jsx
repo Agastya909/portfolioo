@@ -28,7 +28,7 @@ const Links = () => {
           <motion.div
             key={index}
             className="list-items"
-            whileHover={{ scale: 1.25 }}
+            whileHover={{ scale: 1.25, color: "#F31559" }}
             whileTap={{ scale: 1 }}
             variants={itemVariants}
           >

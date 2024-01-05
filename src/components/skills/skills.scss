@@ -1,0 +1,20 @@
+.skills-main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  .wrapper {
+    margin: auto;
+
+    div {
+      margin: 10px;
+      background-color: purple;
+      color: white;
+      padding: 20px;
+      border-radius: 20px;
+      h2 {
+        font-family: "Poppins", sans-serif;
+      }
+    }
+  }
+}
