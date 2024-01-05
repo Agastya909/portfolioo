@@ -7,40 +7,65 @@ const Skills = () => {
       <div className="wrapper">
         <motion.div
           className="languages"
-          drag={true}
-          dragConstraints={{ bottom: 100, left: -100, right: 100, top: 100 }}
+          drag
+          dragSnapToOrigin
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          whileInView={{ opacity: 1 }}
         >
           <h2>Languages</h2>
-          <div></div>
+          <div>
+            <img src="/cpp.png" alt="C++ icon" />
+            <img src="/js.png" alt="Javascript icon" />
+            <img src="/ts.png" alt="Typescript icon" />
+          </div>
         </motion.div>
         <motion.div
           className="frameworks"
-          drag={true}
-          dragConstraints={{ bottom: 100, left: -100, right: 100, top: 100 }}
+          drag
+          dragSnapToOrigin
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 0.25 }}
+          whileInView={{ opacity: 1 }}
         >
           <h2>Frameworks</h2>
-          <div></div>
+          <div>
+            <img src="/react.png" alt="React" />
+            <img src="/express.png" alt="Express icon" />
+            <img src="/tailwind.png" alt="Tailwind icon" />
+            <img src="/framer.png" alt="Framer motion icon" />
+          </div>
         </motion.div>
         <motion.div
           className="tools"
-          drag={true}
-          dragConstraints={{ bottom: 100, left: -100, right: 100, top: 100 }}
+          drag
+          dragSnapToOrigin
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          whileInView={{ opacity: 1 }}
         >
           <h2>Tools</h2>
-          <div></div>
+          <div>
+            <img src="/postman.png" alt="Postman" />
+            <img src="/vsc.png" alt="vs code" />
+            <img src="/git.png" alt="git" />
+            <img src="/mongo.png" alt="mongo" />
+            <img src="/mysql.png" alt="Postman" />
+          </div>
         </motion.div>
         <motion.div
           className="other"
-          drag={true}
-          dragConstraints={{
-            bottom: 50,
-            left: -50,
-            right: 50,
-            top: 50,
-          }}
+          drag
+          dragSnapToOrigin
+          initial={{ opacity: 0 }}
+          transition={{ duration: 0.5, delay: 1 }}
+          whileInView={{ opacity: 1 }}
         >
           <h2>Others</h2>
-          <div></div>
+          <div>
+            <img src="/vim.png" alt="vim" />
+            <img src="/linux.png" alt="linux" />
+          </div>
         </motion.div>
       </div>
     </motion.div>
