@@ -2,7 +2,7 @@ import ToggleButton from "./buttons/ToogleButton";
 import Links from "./links/Links";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import "./sidebar.scss";
+import "./sidebar.css";
 
 const SideBar = () => {
   const [isOpen, setOpen] = useState(false);
@@ -30,7 +30,7 @@ const SideBar = () => {
     <motion.div className="sidebar" animate={isOpen ? "open" : "closed"}>
       <motion.div className="bg" variants={varients}>
         <Links />
-      <ToggleButton setOpen={setOpen} />
+        <ToggleButton setOpen={setOpen} />
       </motion.div>
     </motion.div>
   );

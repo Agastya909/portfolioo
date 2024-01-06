@@ -1,0 +1,42 @@
+.navbar {
+  height: 100px;
+}
+.navbar .wrapper {
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.navbar span {
+  font-family: "DM Serif Display", serif;
+  font-size: 48px;
+  font-weight: bolder;
+}
+.navbar .social {
+  display: flex;
+  flex-direction: row;
+}
+.navbar .social img {
+  height: 55px;
+  width: 55px;
+  margin: 5px;
+}
+
+@media (max-width: 620px) {
+  .navbar .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 621px) and (max-width: 1566px) {
+  .navbar .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+}

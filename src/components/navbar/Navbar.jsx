@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import SideBar from "../sidebar/Sidebar";
-import "./navbar.scss";
+import "./navbar.css";
 
 const NavBar = () => {
   return (
@@ -56,7 +56,5 @@ const NavBar = () => {
     </div>
   );
 };
-
-// <a target="_blank" href="https://icons8.com/icon/hFoVFpm6gl9A/instagram">Instagram</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
 
 export default NavBar;

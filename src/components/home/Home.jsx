@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./home.scss";
+import "./home.css";
 import { useState, useEffect } from "react";
 
 const GREETINGS = ["Hello", "Namaste", "Hola", "Konnichiwa", "Bonjour"];
