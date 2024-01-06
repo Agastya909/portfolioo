@@ -2,36 +2,34 @@
   height: 100%;
   width: 100%;
 
-  .wrapper {
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-width: 1366px;
-    div {
-      margin: 10px;
-      color: white;
-      border-radius: 20px;
-      overflow: hidden;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1366px;
+  div {
+    margin: 10px;
+    color: white;
+    border-radius: 20px;
+    overflow: hidden;
 
-      h2 {
-        width: fit-content;
-        border-bottom: 10px solid #2d2d57;
-        padding: 15px;
-        font-family: "Poppins", sans-serif;
+    h2 {
+      width: fit-content;
+      border-bottom: 10px solid #2d2d57;
+      padding: 15px;
+      font-family: "Poppins", sans-serif;
+    }
+    div {
+      padding: 20px;
+      display: flex;
+      img {
+        margin: 0 10px;
+        height: 70px;
       }
-      div {
-        padding: 20px;
-        display: flex;
-        img {
-          margin: 0 10px;
-          height: 70px;
-        }
-        h5 {
-          padding: 2px;
-          font-family: "Poppins", sans-serif;
-          margin: 10px 0px;
-        }
+      h5 {
+        padding: 2px;
+        font-family: "Poppins", sans-serif;
+        margin: 10px 0px;
       }
     }
   }
