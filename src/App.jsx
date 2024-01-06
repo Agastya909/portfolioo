@@ -34,7 +34,9 @@ const App = () => {
         <section>
           <Parallex type="portfolio" />
         </section>
-        <Portfolio />
+        <div id="projects">
+          <Portfolio />
+        </div>
         {/* <section>Parallex</section> */}
         {/* add parallex here too and try to smooth out the animation between portfolio and contact us page */}
         <section id="Contact">Contact</section>
