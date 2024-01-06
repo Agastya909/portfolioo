@@ -64,14 +64,16 @@ const textVarient = {
 const PortfolioItem = ({ item }) => {
   return (
     <motion.section className="portfolio-item">
-      <motion.img
-        src={item.img}
-        alt="project image"
-        className="img"
-        variants={imageVariant}
-        initial="initial"
-        whileInView="animate"
-      />
+      <div>
+        <motion.img
+          src={item.img}
+          alt="project image"
+          className="img"
+          variants={imageVariant}
+          initial="initial"
+          whileInView="animate"
+        />
+      </div>
       <motion.div
         className="text"
         variants={textVarient}
