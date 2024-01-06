@@ -22,7 +22,7 @@ const Home = () => {
         <motion.h2 animate={{ color: COLORS[greetingIndex] }}>
           {GREETINGS[greetingIndex]}
         </motion.h2>
-        <h3>I am Agastya </h3>
+        <h3>I am a </h3>
         {/* <h1>Fullstack </h1> */}
         <motion.h1 animate={{ color: COLORS[colorIndex] }}>
           Web & Android

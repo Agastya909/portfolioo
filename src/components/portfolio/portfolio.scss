@@ -1,0 +1,44 @@
+.portfolio-main {
+  position: relative;
+  width: 100%;
+  .progress {
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding-top: 50px;
+    text-align: center;
+    color: orange;
+
+    h1 {
+      font-size: 64px;
+      font-family: "DM Serif Display", serif;
+    }
+    .progress-bar {
+      border-radius: 10px;
+      height: 10px;
+      background-color: #ffffff;
+      margin-top: 20px;
+    }
+  }
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      border-radius: 50px;
+      height: 540px;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 20px;
+
+      h2 {
+        font-size: 48px;
+      }
+    }
+  }
+}

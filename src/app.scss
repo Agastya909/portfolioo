@@ -6,7 +6,7 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "DM Serif Display", serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -22,4 +22,11 @@ a {
 section {
   height: 100vh;
   scroll-snap-align: center;
+}
+
+.progress-bar {
+  position: sticky;
+  top: 0px;
+  height: 10px;
+  background-color: #620080;
 }
