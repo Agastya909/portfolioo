@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./contact.scss";
+import "./contact.css";
 
 const Contact = () => {
   const variant = {
@@ -15,7 +15,6 @@ const Contact = () => {
       },
     },
   };
-
   const textVarient = {
     initial: {
       y: 300,

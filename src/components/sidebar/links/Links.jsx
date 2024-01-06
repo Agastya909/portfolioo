@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-const Links = () => {
+const Links = ({ setOpen }) => {
   const linkItems = ["Home", "Skills", "Projects", "Contact"];
   const variants = {
     open: {
@@ -31,6 +31,7 @@ const Links = () => {
             whileHover={{ scale: 1.25, color: "#F31559" }}
             whileTap={{ scale: 1 }}
             variants={itemVariants}
+            onClick={() => setOpen((prev) => !prev)}
           >
             <a href={`#${item}`}>{item}</a>
           </motion.div>
