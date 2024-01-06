@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
-import "./app.scss";
+import "./app.css";
 import Home from "./components/home/Home";
 import NavBar from "./components/navbar/Navbar";
 import Parallex from "./components/parallex/Parallex";

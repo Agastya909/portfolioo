@@ -1,5 +1,4 @@
 html {
-  // scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 * {
@@ -7,26 +6,22 @@ html {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  ::-webkit-scrollbar {
-    width: 0;
-  }
 }
-
+* ::-webkit-scrollbar {
+  width: 0;
+}
 body {
   background-color: #0c0c1d;
   color: lightgray;
 }
-
 a {
   text-decoration: none;
   color: inherit;
 }
-
 section {
   height: 100vh;
   scroll-snap-align: center;
 }
-
 .progress-bar {
   position: sticky;
   top: 0px;
