@@ -2,64 +2,99 @@ import { motion } from "framer-motion";
 import "./skills.scss";
 
 const Skills = () => {
+  const variants = {
+    initial: {
+      y: 500,
+      opacity: 0,
+    },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        staggerChildren: 0.5,
+      },
+    },
+  };
+  const itemVariant = {
+    initial: {
+      x: 500,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.75,
+        staggerChildren: 0.25,
+      },
+    },
+  };
+
   return (
     <motion.div
       className="skills-main"
-      whileInView={{
-        transition: {
-          easings: ["easeIn"],
-          delayChildren: 0.5,
-        },
-      }}
+      variants={variants}
+      initial="initial"
+      whileInView={"animate"}
     >
-      <motion.div
-        className="languages"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      >
+      <motion.div className="languages" variants={variants}>
         <h2>Languages</h2>
         <div>
-          <img src="/cpp.png" alt="C++ icon" />
-          <img src="/js.png" alt="Javascript icon" />
-          <img src="/ts.png" alt="Typescript icon" />
+          <motion.img
+            src="/cpp.png"
+            alt="C and C++ icon"
+            variants={itemVariant}
+          />
+          <motion.img
+            src="/js.png"
+            alt="Javascript icon"
+            variants={itemVariant}
+          />
+          <motion.img
+            src="/ts.png"
+            alt="Typescript icon"
+            variants={itemVariant}
+          />
         </div>
       </motion.div>
-      <motion.div
-        className="frameworks"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      >
+      <motion.div className="frameworks" variants={variants}>
         <h2>Frameworks</h2>
         <div>
-          <img src="/react.png" alt="React" />
-          <img src="/express.png" alt="Express icon" />
-          <img src="/tailwind.png" alt="Tailwind icon" />
-          <img src="/framer.png" alt="Framer motion icon" />
+          <motion.img src="/react.png" variants={itemVariant} alt="React" />
+          <motion.img
+            src="/express.png"
+            variants={itemVariant}
+            alt="Express icon"
+          />
+          <motion.img
+            src="/tailwind.png"
+            variants={itemVariant}
+            alt="Tailwind icon"
+          />
+          <motion.img
+            src="/framer.png"
+            variants={itemVariant}
+            alt="Framer motion icon"
+          />
         </div>
       </motion.div>
-      <motion.div
-        className="tools"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      >
+      <motion.div className="tools" variants={variants}>
         <h2>Tools</h2>
         <div>
-          <img src="/postman.png" alt="Postman" />
-          <img src="/vsc.png" alt="vs code" />
-          <img src="/git.png" alt="git" />
-          <img src="/mongo.png" alt="mongo" />
-          <img src="/mysql.png" alt="Postman" />
+          <motion.img src="/postman.png" variants={itemVariant} alt="Postman" />
+          <motion.img src="/vsc.png" variants={itemVariant} alt="vs code" />
+          <motion.img src="/git.png" variants={itemVariant} alt="git" />
+          <motion.img src="/mongo.png" variants={itemVariant} alt="mongo" />
+          <motion.img src="/mysql.png" variants={itemVariant} alt="Postman" />
         </div>
       </motion.div>
-      <motion.div
-        className="other"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-      >
+      <motion.div className="other" variants={variants}>
         <h2>Others</h2>
         <div>
-          <img src="/vim.png" alt="vim" />
-          <img src="/linux.png" alt="linux" />
+          <motion.img src="/vim.png" alt="vim" variants={itemVariant} />
+          <motion.img src="/linux.png" alt="linux" variants={itemVariant} />
+          <motion.img src="/figma.png" alt="figma" variants={itemVariant} />
         </div>
       </motion.div>
     </motion.div>
