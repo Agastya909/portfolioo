@@ -1,0 +1,64 @@
+.parallex-main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.parallex-main h1 {
+  font-size: 100px;
+  font-family: "DM Serif Display", serif;
+}
+.parallex-main .mountains {
+  background-image: url("/public/mountains.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+}
+.parallex-main .planets {
+  background-image: url("/public/planets.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+}
+.parallex-main .stars {
+  background-image: url("/public/stars.png");
+  background-size: cover;
+  background-position: bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+}
+
+@media (max-width: 620px) {
+  .parallex-main .mountains,
+  .parallex-main .planets {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .parallex-main h1 {
+    font-size: 80px;
+    font-family: "DM Serif Display", serif;
+  }
+}
+
+@media (min-width: 620px) and (max-width: 1400px) {
+  .parallex-main .mountains,
+  .parallex-main .planets {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .parallex-main h1 {
+    font-size: 80px;
+    font-family: "DM Serif Display", serif;
+  }
+}

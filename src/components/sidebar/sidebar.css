@@ -50,6 +50,7 @@
 @media (max-width: 620px) {
   .sidebar .bg {
     width: 260px;
+    height: 100vh;
   }
   .sidebar .bg .links .list-items a {
     font-size: large;

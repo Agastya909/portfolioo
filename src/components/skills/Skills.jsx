@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./skills.scss";
+import "./skills.css";
 
 const Skills = () => {
   const variants = {
