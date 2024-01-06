@@ -1,11 +1,12 @@
 import { useRef } from "react";
 import { motion, useScroll, useSpring } from "framer-motion";
+import "./app.scss";
 import Home from "./components/home/Home";
 import NavBar from "./components/navbar/Navbar";
 import Parallex from "./components/parallex/Parallex";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
-import "./app.scss";
+import Contact from "./components/contact/Contact";
 
 const App = () => {
   const ref = useRef();
@@ -37,9 +38,9 @@ const App = () => {
         <div id="projects">
           <Portfolio />
         </div>
-        {/* <section>Parallex</section> */}
-        {/* add parallex here too and try to smooth out the animation between portfolio and contact us page */}
-        <section id="Contact">Contact</section>
+        <section id="Contact">
+          <Contact />
+        </section>
       </div>
     </div>
   );
