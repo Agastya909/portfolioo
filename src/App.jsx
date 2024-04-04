@@ -3,7 +3,7 @@ import { motion, useScroll, useSpring } from "framer-motion";
 import "./app.css";
 import Home from "./components/home/Home";
 import NavBar from "./components/navbar/Navbar";
-import Parallex from "./components/parallex/Parallex";
+// import Parallex from "./components/parallex/Parallex";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 import Contact from "./components/contact/Contact";
@@ -26,15 +26,15 @@ const App = () => {
           <NavBar />
           <Home />
         </section>
-        <section>
+        {/* <section>
           <Parallex type="skills" />
-        </section>
+        </section> */}
         <section id="Skills">
           <Skills />
         </section>
-        <section>
+        {/* <section>
           <Parallex type="portfolio" />
-        </section>
+        </section> */}
         <div id="projects">
           <Portfolio />
         </div>
